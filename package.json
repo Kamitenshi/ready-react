@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Start faster a react project thanks to a simple architecture, integration of useful standard libraries and examples",
   "main": "index.tsx",
-  "repository": "git@github.com:Kamitenshi/ready-react.git",
+  "repository": "https://github.com/Kamitenshi/ready-react.git",
   "author": "Mikaël Simarik <mikael.simarik@epita.fr>",
   "license": "MIT",
   "dependencies": {

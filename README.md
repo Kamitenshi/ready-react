@@ -5,7 +5,11 @@ Start faster a react project thanks to a simple architecture, integration of use
 ## How to use ?
 
 1. `yarn`: Install local dependencies
-1. `yarn dev`: launch development server
+2. `yarn dev`: launch development server
+
+## Extra information
+
+* Source repository: https://github.com/Kamitenshi/ready-react.git
 
 ## Information about this release
 
