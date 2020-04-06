@@ -1,15 +1,12 @@
-import { Action, combineReducers, configureStore } from "@reduxjs/toolkit";
-import { ThunkAction } from "redux-thunk";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import counterSlice from '../stateful-components/counterSlice';
 
+//HOWTO Manage global state n°2 - Add the new slice to the store
 const rootReducer = combineReducers({
     counterSlice
 })
 
 export type RootState = ReturnType<typeof rootReducer>
-
-export type AppThunk = ThunkAction<void, RootState, null, Action<string>>
-
 
 const store = configureStore({
     reducer: rootReducer,

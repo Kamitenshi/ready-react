@@ -1,6 +1,8 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSelector, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../utils/store";
 
+
+//HOWTO Manage global state n°1 - Declare a new slice for the redux store
 const initialState = {
     value: 0
 }
@@ -21,7 +23,13 @@ const counterSlice = createSlice({
     }
 })
 
-export const getValue = (state: RootState) => state.counterSlice.value
+export const counterValueSelector = (state: RootState) => state.counterSlice.value
+
+export const counterDoubleSelector = createSelector(
+    counterValueSelector,
+    (value) => value * 2
+)
+
 
 export const {
     add,
