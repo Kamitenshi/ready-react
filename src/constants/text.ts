@@ -1,1 +1,1 @@
-export const title = 'MyApp'
+export const title = 'Ready React'
