@@ -6,6 +6,6 @@ export const home: Page = {
     href: '/'
 }
 
-export const about: Page = {
-    href: '/about'
+export const modify_counter: Page = {
+    href: '/modify_counter'
 }
